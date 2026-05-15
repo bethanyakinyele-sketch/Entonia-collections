@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Opay Payment</title>
+        <style>
+            body {
+                font-family: Arial, Sans-serif;
+                background: #f0f0f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .payment-box {
+             background: white;
+             padding: 30px;
+             border-radius: 10px;
+             width: 350px;
+             box-shadow: 0 4px 10px rgba(0,0,0,0.2);   
+            }
+
+            h2 {
+                text-align: center;
+                color: green;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px;
+                margin-top: 20px;
+                background: green;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button :hover {
+                background: darkgreen;
+            }
+        </style>
+    </head>
+</html>
+
+<div class="payment-box">
+    <h2>Opay Payment</h2>
+
+    <form action="success.html">
+        <input type="text" placeholder="Full Name" required>
+        <input type="number" placeholder="Phone Number" required>
+        <input type="number" placeholder="Amount" required>
+        <input type="password" placeholder="Transaction PIN" required>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</div>
+ 
+<a href="success.html" class="btn"></a>
+</body>
+</html>
